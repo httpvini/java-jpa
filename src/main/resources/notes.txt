@@ -1,0 +1,20 @@
+//pessoas.forEach(p -> entityManager.persist(p));
+//pessoas.forEach(p -> System.out.println(entityManager.find(Pessoa.class, p.getId())));
+//Pessoa p = entityManager.find(Pessoa.class, 2);
+//entityManager.remove(p);
+//o entityManager só exclui objetos monitorados. significa que não posso passar um objeto para exclusão que não tenha sido consultado no banco ou inserido pouco antes da deleção.
+//não passar id durante a escrita.
+
+
+//        List<Pessoa> pessoas = new ArrayList<>();
+//
+//        Pessoa p1 = new Pessoa("Marcus", "marcus@email.com");
+//        Pessoa p2 = new Pessoa("Vinicius", "vin@email.com");
+//        Pessoa p3 = new Pessoa("Oliveira", "oliv@email.com");
+//
+//        pessoas.add(p1);
+//        pessoas.add(p2);
+//        pessoas.add(p3);
+//
+//        //pessoas.forEach(p -> pessoaDao.save(p));
+//        pessoas.forEach(p -> pessoaDao.get(p.getId()));
